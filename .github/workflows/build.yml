@@ -31,10 +31,26 @@ jobs:
         pip install -r requirements.txt
         pip install pyinstaller
 
+    # Add certificate creation and signing steps
+    - name: Create Self-signed Certificate
+      run: |
+        $cert = New-SelfSignedCertificate -DnsName "WallpaperAISlideshow" -Type CodeSigning -CertStoreLocation "Cert:\CurrentUser\My"
+        $pwd = ConvertTo-SecureString -String "temp123!" -Force -AsPlainText
+        Export-PfxCertificate -Cert $cert -FilePath "codesign.pfx" -Password $pwd
+      shell: powershell
+
     - name: Build with PyInstaller
       run: |
         pyinstaller wallpaper_ai_slideshow.spec
         
+    - name: Sign the executable
+      run: |
+        $pwd = ConvertTo-SecureString -String "temp123!" -Force -AsPlainText
+        Import-PfxCertificate -FilePath "codesign.pfx" -CertStoreLocation "Cert:\CurrentUser\My" -Password $pwd
+        $cert = Get-ChildItem -Path Cert:\CurrentUser\My -CodeSigningCert
+        Set-AuthenticodeSignature -FilePath "dist\wallpaper_ai_slideshow\wallpaper_ai_slideshow.exe" -Certificate $cert
+      shell: powershell
+
     - name: Create Release Package
       if: github.ref == 'refs/heads/main'
       run: |

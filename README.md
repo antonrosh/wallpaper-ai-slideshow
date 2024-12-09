@@ -45,6 +45,15 @@ Manual Updates:
 *Costs are approximate and based on DALL-E 3 API pricing ($0.040 per HD image)*
 *Monthly estimates based on 30-day month*
 
+## Pricing Information
+
+The application uses the OpenAI API which has associated costs:
+
+- DALL-E 2: $0.020 per image (1024x1024)
+- DALL-E 3: $0.040 per image (1024x1024)
+
+Please note that these costs are subject to change. Check OpenAI's current pricing at: https://openai.com/pricing
+
 ## 💡 Usage Tips
 - Start with longer intervals to manage costs
 - Use manual mode to control spending
