@@ -34,19 +34,19 @@ This warning appears because we're a new, independent developer. The application
 DALL-E 3 API costs (HD quality, $0.040 per image):
 
 Frequent Updates:
-- Every 5 minutes: ~$15.00/month (21,600 images)
-- Every 15 minutes: ~$5.00/month (7,200 images)
-- Every 30 minutes: ~$2.50/month (3,600 images)
-- Every 45 minutes: ~$1.67/month (2,400 images)
-- Every 60 minutes: ~$1.25/month (1,800 images)
+- Every 5 minutes: ~$864.00/month (21,600 images)
+- Every 15 minutes: ~$288.00/month (7,200 images)
+- Every 30 minutes: ~$144.00/month (3,600 images)
+- Every 45 minutes: ~$96.00/month (2,400 images)
+- Every 60 minutes: ~$72.00/month (1,800 images)
 
 Daily Updates:
-- Every 1 hour: ~$1.25/month (1,440 images)
-- Every 2 hours: ~$0.60/month (720 images)
-- Every 3 hours: ~$0.40/month (480 images)
-- Every 6 hours: ~$0.20/month (240 images)
-- Every 12 hours: ~$0.10/month (120 images)
-- Every 24 hours: ~$0.05/month (60 images)
+- Every 1 hour: ~$57.60/month (1,440 images)
+- Every 2 hours: ~$28.80/month (720 images)
+- Every 3 hours: ~$19.20/month (480 images)
+- Every 6 hours: ~$9.60/month (240 images)
+- Every 12 hours: ~$4.80/month (120 images)
+- Every 24 hours: ~$2.40/month (60 images)
 
 Manual Updates:
 - On-demand only: Pay per generation ($0.040 per image)
