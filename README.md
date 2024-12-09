@@ -14,6 +14,15 @@ Generate and manage beautiful AI-powered wallpapers using DALL-E 3. Transform yo
 ## 📥 Download
 Download the latest version from the [Releases](../../releases) page.
 
+## ⚠️ Windows Security Notice
+When running the application for the first time, you may see a Windows SmartScreen warning saying "Windows protected your PC" or "Unknown Publisher". This is normal for new applications without an expensive code signing certificate.
+
+To run the application:
+1. Click "More info" on the SmartScreen popup
+2. Click "Run anyway"
+
+This warning appears because we're a new, independent developer. The application is safe to use and open source - you can review all the code in this repository.
+
 ## 🔑 Getting OpenAI API Key
 1. Visit [platform.openai.com](https://platform.openai.com)
 2. Sign up or log in to your account
