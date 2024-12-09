@@ -7,6 +7,12 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Add permissions block
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -44,6 +50,7 @@ jobs:
         name: Release v${{ github.run_number }}
         draft: false
         prerelease: false
+        generate_release_notes: true # Added this option
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
